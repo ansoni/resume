@@ -1,0 +1,99 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+\moderncvstyle{casual} 
+\moderncvcolor{orange}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.5in, bottom=0.75in]{geometry}
+\usepackage{paralist}
+\usepackage{color}
+\usepackage{verbatim}
+\usepackage{relsize}
+\definecolor{blue}{RGB}{19,65,145}
+\newcommand\CC{C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\relsize{-3}{\textbf{++}}}}
+
+
+
+
+\name{Anthony}{Johnson}
+\photo[64pt][0.4pt]{resume_homepage}
+\phone[mobile]{+1678-468-1847}
+\email{ansoni@gmail.com}
+\address{Roswell, Georgia}
+\extrainfo{Learn More: \href{http://goo.gl/n1pZ7U}{http://goo.gl/n1pZ7U} }
+\quote{{ \textcolor{blue}{Operations -- Development -- Monitoring -- Performance -- Automation}}}
+
+\begin{document}
+\makecvtitle
+
+\section{Goal}
+\cvitem{}{Looking for a Challenge.  Looking to have an impact.  Looking to make a difference.}
+\section{Technical Competencies}
+  \subsection{Languages}
+    \cvitem{}{Ruby, Java, C/C++, Perl, Python, Objective-C/Cocoa, Qt, xHTML, Javascript, CSS, and Shell scripting}
+    \subsection{Storage Networking}
+      \cvitem{}{iSCSI, RAID 0,15,10, ZFS, CIFS, and NFS}
+    \subsection{Virtualization}
+       \cvitem{}{Solaris Zones, Xen, VMWare, and VirtualBox}
+     \subsection{Databases}
+        \cvitem{}{	Postgres, MongoDB, Oracle RAC 10g/11g and Mysql}
+     \subsection{Network Infrastructure}
+       \cvitem{}{Load Balancers, Switches, and Routers}
+       \cvitem{}{Cisco, Juniper and Foundry}
+      \subsection{Network/Server Monitoring}
+        \cvitem{}{SNMPv1|2c|3, collectd, Net-SNMPD and JMX}
+        \cvitem{}{Graphite, Cacti, OpenNMS and Nagios}
+        
+
+\section{Personal Interests}
+  \subsection{Technical}
+    \cvitem{}{Cluster Computing, Business Orchestration, Raspberry Pi/Arduino and Quantum Physics}
+  \subsection{Non-Technical}
+    \cvitem{}{World Cultures, Photography, Kyudo(Japanese Archery), Breadmaking, and Aquaponics}
+    
+    
+\section{Experience}
+
+\cventry{May 2011--present}{Senior System Engineer/DevOps}{HERE a subsidiary of Nokia}{Alpharetta, Ga}{}{
+  \begin{itemize}
+    \item Joined the Internal SWAT team tasked with tackling and mitigating high risk and complicated operational issues.
+    \item Architected and implemented a Network Application for polling all network equipments in HERE DataCenters for Hardware, Interface, Spanning Tree, Routing, Interconnects, ARPs and Bridge Table info.
+    \begin{itemize}
+      \item Data organized into a well-structured ActiveRecord Model
+      \item Sinatra/Rack backend with data exposed via a REST API
+      \item Tool used as an enabler for internal services and a datasource for the HERE CMDB.
+    \end{itemize}
+    \item Worked with internal stakeholders to design, roadmap, and present a business orchestration solution for the Global Network Services team.
+  \end{itemize}
+  }
+\cventry{February 2008--May 2011}{Senior Research Engineer}{Nokia}{Alpharetta, Ga}{}{
+  \begin{itemize}
+    \item Took on leadership role in new Nokia organization tasked with developing, delivering and sustaining a carrier-grade sync solution for AT\&T
+    \item Implementation owner for helping our team to "be agile" with our development cycles.  Gave training to over 30 engineers and helped to define our Scrum/Agile processes.
+    \item Worked with remote development teams, including daily stand-up calls, sprint planning meetings, design and code reviews. 
+    \item Owned the Performance and Monitoring team for the Sync Platform
+    \begin{itemize}
+      \item Provided guidance on data collection, profiling, research and code changes.
+      \item Standardized our performance testing to JMeter.  Designed and oversaw implementation of a SyncML Sampler, SNMP Sampler, and report generations.
+      \item Successfully took product from under-performing on contract required SLA measurements to a 100\% pass rate on transaction per second, latency and concurrency.
+    \end{itemize}
+  \end{itemize}}
+  
+  \cventry{January 2007--February 2008}{Software Engineer}{Air2Web}{Atlanta, Ga}{}{
+    \begin{itemize}
+      \item 	Java J2EE development for use in Weblogic, JBoss, and Tomcat using frameworks such as JMS, RMI, JDBC, Web Services, Hibernate, JNDI, JGroups, JMX, Log4J, and Jakarta Commons.
+      \item Promoted to department lead and took ownership of common libraries, documentation via wiki and team communications.
+      \item 	Enhanced department offerings by providing expertise on Air2Web platform applications and UNIX/Network technologies (SNMP and load balancing)
+    \end{itemize}}
+    
+     \cventry{May 2005--February 2007}{Senior System Administrator}{Air2Web}{Atlanta, Ga}{}{
+       \begin{itemize}
+         \item Implemented SNMP polling and trap notification by writing custom MIBs and Perl scripts as well as designing and writing a C++ application to generate statistics from proprietary log files for long-term trending via Cacti/RRDTool.
+         \item Created Requirements and Implementation documents for projects for use by Operations and Development.
+         \item Designed and implemented a datacenter tracking application written in Perl that enabled the company for the first time to successfully catalog and audit all systems running in 4 different datacenters.
+       \end{itemize}}
+       
+     \cventry{2003--2005}{Jack of All Trades (Linux/Network Administrator, DBA, \CC{} Developer)}{eMediaTrade}{Roswell, Ga}{}{}
+     
+      \cventry{1999--2003}{Operations Engineer}{Pathfire}{Roswell, Ga}{}{}
+  
+\end{document}
+  

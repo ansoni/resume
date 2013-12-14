@@ -1,0 +1,19 @@
+%h2
+  Resume 
+%p
+  Perhaps you are looking for an 
+  %a{:href=>uri(resume)}="updated resume?"
+%p
+  My resume is built using 
+  %a{:href=>"http://en.wikipedia.org/wiki/LaTeX"}="LaTeX"
+  which surprisingly most modern computer engineers don't know much about.  I am a fan mostly because it allows you to focus on content rather than the look and feel.  It is great for longer-lived, larger scoped documents.  I view it as a Model-View-Controller for documents with the Model being the LaTeX markup, the Controller being the humans maintaining it, and the view being the tex program itself.
+  %br
+  %br
+  %a{:href=>"http://www.ctan.org/pkg/moderncv"}="ModernCV"
+  was the class used. Here is the actual markup.
+
+  - data = File.read(File.join(settings.public_dir,resume_tex))
+  %pre=data
+  
+
+  

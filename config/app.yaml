@@ -1,0 +1,7 @@
+headers:
+  Home: /
+  Resume: /resume
+  Design: /design
+  Tech: /tech
+resume: resume/ajohnson-2013.pdf
+resume_tex: resume/ajohnson-2013.tex

@@ -1,0 +1,57 @@
+%head
+  %script{ :type => "text/javascript", :src => uri("/js/bootstrap.min.js") }
+  %link{ :type=>"text/css", :rel=>"stylesheet", :href => uri("/css/bootstrap.min.css") }
+  %meta{:name=>"viewport",:content=>"width=device-width, initial-scale=1, maximum-scale=1"}
+  %script{ :type => "text/javascript", :src => "http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" }
+  %link{ :type=>"text/css", :rel=>"stylesheet", :href => uri("/css/resume.css") }
+  %script{:type=>"text/javascript"}
+    :plain
+      $(document).ready(function() {
+        $('[data-toggle=offcanvas]').click(function() {
+          $('.row-offcanvas').toggleClass('active');
+        });
+      });
+%body
+  %div.page-container
+    %div.navbar.navbar-default.navbar-fixed-top{:role=>"navigation"}
+      %div.container
+        %div.navbar-header
+          %button.navbar-toggle{:"data-toggle"=>"offcanvas", :type=>"button", :"data-target" => ".sidebar-nav"}
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          %a.navbar-brand{:href=>"#"}="Anthony Johnson"
+    %div.container
+      %div.row.row-offcanvas.row-offcanvas-left
+        %div#sidebar.col-xs-6.col-sm-3.sidebar-offcanvas{:role=>"navigation"}
+          %ul.nav
+            -headers.each_pair do |text, url|
+              -if request.path_info == url
+                %li.active
+                  %a{:href=>uri(url)}=text
+              -else
+                %li
+                  %a{:href=>uri(url)}=text
+        %div#content.col-xs-12.col-sm-9
+          = hamlInclude content, locals
+          %br
+          %div.bottom
+            %center
+              - found_current_page = false
+              - current_text = nil;current_url = nil
+              - headers.each_pair do |text, url|
+                - last_text = current_text;last_url = current_url
+                - current_text = text;current_url = url
+                - if found_current_page
+                  %button.btn.btn-primary.btn-large{:type=>"button", :onClick=>"location.href='#{current_url}'"}
+                    %span=current_text
+                    %span.glyphicon.glyphicon-arrow-right
+                  - break
+                - if request.path_info == url and last_text != nil
+                  %button.btn.btn-primary.btn-large{:type=>"button", :onClick=>"location.href='#{last_url}'"}
+                    %span.glyphicon.glyphicon-arrow-left
+                    %span=last_text
+                  - found_current_page = true
+                - elsif request.path_info == url
+                  - found_current_page = true
+   
