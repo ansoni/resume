@@ -2,6 +2,7 @@ headers:
   Home: /
   Resume: /resume
   Design: /design
+  Cloud: /cloud
   Tech: /tech
-resume: resume/ajohnson-2013.pdf
-resume_tex: resume/ajohnson-2013.tex
+resume: resume/ajohnson-2014.pdf
+resume_tex: resume/ajohnson-2014.tex
