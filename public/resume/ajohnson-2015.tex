@@ -14,12 +14,11 @@
 
 
 \name{Anthony}{Johnson}
-\photo[64pt][0.4pt]{resume_homepage}
-\phone[mobile]{+1678-468-1847}
-\email{ansoni@gmail.com}
-\address{Roswell, Georgia}
-\extrainfo{Learn More: \href{http://goo.gl/n1pZ7U}{http://goo.gl/n1pZ7U} }
-\quote{{ \textcolor{blue}{Cloud -- Automation -- Operations -- Development -- Monitoring}}}
+%\photo[64pt][0.4pt]{resume_homepage}
+%\phone[mobile]{+1678-468-1847}
+%\email{ansoni@gmail.com}
+%\address{Roswell, Georgia}
+%\extrainfo{Learn More: \href{http://goo.gl/n1pZ7U}{http://goo.gl/n1pZ7U} }
 
 \begin{document}
 \makecvtitle
@@ -27,27 +26,19 @@
 \section{Goal}
 \cvitem{}{Looking for a challenge.  Looking to have an impact.  Looking to make a difference.}
 \section{Technical Competencies}
-  \subsection{Languages}
-    \cvitem{}{Ruby, Java, C/C++, Perl, Python, Objective-C/Cocoa, Qt, xHTML, Javascript, CSS, and Shell scripting}
-    \subsection{Storage Networking}
-      \cvitem{}{iSCSI, RAID 0,15,10, ZFS, CIFS, and NFS}
-    \subsection{Virtualization/Clouds}
-       \cvitem{}{AWS, Xen, VMWare, and VirtualBox}
-     \subsection{Databases}
-        \cvitem{}{Postgres, MongoDB, Oracle RAC 10g/11g and Mysql}
-     \subsection{Network Infrastructure}
-       \cvitem{}{Load Balancers, Switches, and Routers}
-       \cvitem{}{Cisco, Juniper and Foundry}
-      \subsection{Network/Server Monitoring}
-        \cvitem{}{SNMPv1|2c|3, collectd, Net-SNMPD and JMX}
-        \cvitem{}{Graphite, Cacti, OpenNMS and Nagios}
+  \cvitem{Cloud}{Amazon Web Services, OpenStack Swift, Selectel(Russia Cloud Provider) }
+  \cvitem{Languages}{Ruby, Java, Python, Perl, Objective-C/Cocoa, Qt, C++, xHTML, Javascript, CSS, and Shell scripting}
+   \cvitem{Storage}{iSCSI, RAID 0,15,10, ZFS, CIFS, and NFS}
+   \cvitem{Virtualization}{Xen, VMWare, and VirtualBox}
+   \cvitem{Databases}{Postgres, MongoDB, Oracle RAC 10g/11g and Mysql}
+   \cvitem{Network}{F5 and Foundry Load Balancers, Cisco and Juniper Switches, and Cisco Routers}
+   \cvitem{}{Cisco, Juniper and Foundry}
+        \cvitem{Monitoring}{SNMP (all aspects), collectd, Graphite, Cacti, OpenNMS and Nagios}
         
 
 \section{Personal Interests}
-  \subsection{Technical}
-    \cvitem{}{Cluster Computing, Business Orchestration, Raspberry Pi/Arduino and Quantum Physics}
-  \subsection{Non-Technical}
-    \cvitem{}{World Cultures, Photography, Kyudo(Japanese Archery), Breadmaking, and Aquaponics}
+  \cvitem{Tech}{Business Orchestration, Raspberry Pi/Arduino and Quantum Physics}
+  \cvitem{Non-Tech}{World Cultures, Photography, Kyudo(Japanese Archery), Breadmaking, and Aquaponics}
 
 \section{Community Projects}
     \cvitem{\href{http://jmeter.apache.org}{JMeter}}{Enhancements and Bug Reports}
@@ -59,12 +50,13 @@
 
 \cventry{January 2014--present}{Senior Cloud Architect}{HERE a subsidiary of Nokia}{Alpharetta, Ga}{}{
   \begin{itemize}
-    \item One of two engineers tasked with re-building the Cloud Platform team for the Nokia HERE and Nokia CTO companies
+    \item Helped to re-build and re-imagine the Cloud Platform team as a micro-service organization.
     \item Reviewed HERE product architectures to ensure teams utilized AWS properly and efficiently
-    \item Extended NetFlix Ice to add SAML Authentication support with the ability to constrain billing data access via Active Directory Security Group memberships
-    \item Built and maintained the Nokia Linux Amazon Machine Image(AMI) that every team ran in AWS
-    \item Designed and Implemented AWS Federated Login to support 1,000 unique users across 200 accounts using Active Directory Security Group memberships for account access.
-    \item Identified, scoped and re-designed the Nokia Linux AMI to save the company 250,000 dollars a year 
+    \item Extended NetFlix Ice to add SSO Authentication via SAML with the ability to constrain billing data to Active Directory Security Group memberships
+    \item Built and maintained the Nokia Linux Amazon Machine Image(AMI) that every team utilized in AWS
+    \item Implemented AWS Federated Login to support 1,000 unique users across 200 accounts using Active Directory Security Group memberships for account access.
+    \item Identified, scoped and re-designed the Nokia Linux AMI to save the company 250,000 dollars a year
+    \item Brainstormed, Designed, Implemented and launched the Cloud Platform api and web portal using JAX-RS, Single Sign-on and Angular JS.  This self-service portal allowed teams to run tooling, reporting and automation against AWS accounts.
   \end{itemize}
 }
 
@@ -72,10 +64,10 @@
 \cventry{May 2011--January 2014}{Senior System Engineer/DevOps}{HERE a subsidiary of Nokia}{Alpharetta, Ga}{}{
   \begin{itemize}
     \item Joined the Internal SWAT team tasked with tackling and mitigating high risk and complicated operational issues.
-    \item Architected and implemented a Network Application for polling all network equipments in HERE DataCenters for Hardware, Interface, Spanning Tree, Routing, Interconnects, ARPs and Bridge Table info.
+    \item Architected and implemented an application for polling all network equipment in HERE DataCenters for hardware configuration, interfaces, spanning tree info, routing tables, cross-connects, and arp tables.
     \begin{itemize}
-      \item Data organized into a well-structured ActiveRecord Model
-      \item Sinatra/Rack backend with data exposed via a REST API
+      \item Data accessed via ActiveRecord
+      \item Sinatra/Rack backend with a REST API
       \item Tool used as an enabler for internal services and a datasource for the HERE CMDB.
     \end{itemize}
     \item Worked with internal stakeholders to design, roadmap, and present a business orchestration solution for the Global Network Services team.
