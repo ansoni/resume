@@ -1,4 +1,5 @@
 \documentclass[11pt,a4paper,sans]{moderncv}
+
 \moderncvstyle{casual} 
 \moderncvcolor{orange}
 \usepackage[utf8]{inputenc}
@@ -7,8 +8,13 @@
 \usepackage{color}
 \usepackage{verbatim}
 \usepackage{relsize}
+
+
 \definecolor{blue}{RGB}{19,65,145}
 \newcommand\CC{C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\relsize{-3}{\textbf{++}}}}
+\newcommand{\myhref}[2]{\href{#1}{\textcolor{blue}{#2}}}
+\newcommand{\myurl}[1]{\href{#1}{\textcolor{blue}{#1}}}
+
 
 
 
@@ -17,37 +23,73 @@
 \photo[64pt][0.4pt]{resume_homepage}
 \phone[mobile]{+1678-468-1847}
 \email{ansoni@gmail.com}
-\address{Roswell, Georgia}
-\extrainfo{Learn More: \href{http://goo.gl/n1pZ7U}{http://goo.gl/n1pZ7U} }
+\address{Pleasanton, CA}
+\extrainfo{Learn More: \myhref{http://goo.gl/n1pZ7U}{http://goo.gl/n1pZ7U} }
+
 
 \begin{document}
+
 \makecvtitle
 
 \section{Goal}
-\cvitem{}{Looking for a challenge.  Looking to have an impact.  Looking to make a difference.}
+\cvitem{}{To ride eternal, shiny and chrome.}
 \section{Technical Competencies}
   \cvitem{Cloud}{Amazon Web Services, OpenStack Swift, Selectel(Russia Cloud Provider) }
   \cvitem{Languages}{Go, Java, Ruby, Python, Perl, Objective-C/Cocoa, Qt, C++, xHTML, Javascript, CSS, and Shell scripting}
    \cvitem{Storage}{iSCSI, RAID 0,15,10, ZFS, CIFS, and NFS}
-   \cvitem{Virtualization}{Xen, VMWare, and VirtualBox}
-   \cvitem{Databases}{Postgres, MongoDB, Oracle RAC 10g/11g and Mysql}
+   \cvitem{Virtualization}{Docker, Xen, VMWare, and VirtualBox}
+   \cvitem{Databases}{Elasticsearch, Postgres, MongoDB, Oracle RAC 10g/11g and Mysql}
    \cvitem{Network}{F5 and Foundry Load Balancers, Cisco and Juniper Switches, and Cisco Routers}
-    \cvitem{Monitoring}{SNMP (all aspects), collectd, Graphite, Cacti, OpenNMS and Nagios}
+    \cvitem{Monitoring}{Fluentd, Logstash, SNMP (all aspects), collectd, Graphite, Cacti, OpenNMS and Nagios}
         
 
 \section{Personal Interests}
-  \cvitem{Tech}{Business Orchestration, Raspberry Pi/Arduino and Quantum Physics}
-  \cvitem{Non-Tech}{World Cultures, Photography, Kyudo(Japanese Archery), Breadmaking, and Aquaponics}
+  \cvitem{Tech}{Business Orchestration, IoT/Raspberry Pi/Arduino and Quantum Physics}
+  \cvitem{Non-Tech}{World Cultures, Photography, Kyudo (Japanese Archery), Breadmaking, and aquaponics}
 
+\section{Presentations}
+ \cventry{June 29th, 2017}{Devops.com Webinar}{}{Web Presentation}{}{
+    How Can You Adopt A Cloud Native DevOps Model Without Sacrificing Security?\\ 
+    \myurl{https://youtu.be/SdkIRjX0-HY}
+  }
+  \cventry{March 16th, 2017}{AWS East Bay MeetUp}{}{Dublin, Ca}{}{
+     Transforming Ellie Mae into a Technology Company\\
+     \myurl{https://youtu.be/B4J1x3eUj7I}
+ }
+
+  \cventry{November 30th, 2016}{AWS re:Invent 2016}{}{Las Vegas, Nv}{}{
+     The AWS Hero's Journey to Achieving Autonomous, Self-Healing Security (SAC402)\\
+     \myurl{https://youtu.be/RvIjgfUT-C0}
+  }
+
+ 
+    
 \section{Community Projects}
-    \cvitem{\href{http://jmeter.apache.org}{JMeter}}{Enhancements and Bug Reports}
-    \cvitem{\href{https://github.com/Netflix/ice}{NetFlix Ice}}{SAML Single-Sign On Login Support}
-    \cvitem{\href{https://github.com/ansoni/watir-extensions-element-screenshot}{Watir}}{Element Screenshot Support}
+      \cvitem{\myhref{http://www.fluentd.org/plugins}{Fluentd Plugins}}{
+        \myhref{https://github.com/ansoni/fluent-plugin-json-schema-filter}{json-schema-filter} validates incoming events against a JSON schema
+        \myhref{https://github.com/ansoni/fluent-plugin-s3-input}{s3-input} takes coming events that have an S3 bucket/key location and will pull the data from S3 into the event.
+    }
+    \cvitem{\myhref{http://jmeter.apache.org}{JMeter}}{\myhref{http://jmeter.apache.org/usermanual/component_reference.html\#Test_Fragment}{Test Fragment} and \myhref{http://jmeter.apache.org/usermanual/component_reference.html\#setUp_Thread_Group}{Setup and Teardown Thread Group} Enhancements and Bug Reports}
+    \cvitem{\myhref{https://github.com/Netflix/ice}{NetFlix Ice}}{SAML Single-Sign On Login Support}
+    \cvitem{\myhref{https://github.com/ansoni/watir-extensions-element-screenshot}{Watir}}{Element Screenshot Support}
     \cvitem{Sinatra-Soap}{WSDL Support}
     
 \section{Experience}
-
-\cventry{November 2015--present}{Staff Architect}{Concurrent}{Duluth, Ga}{}{
+\cventry{March 2016--Present}{Staff Engineer, Cloud Platform and Engineering}{Ellie Mae}{Pleasanton, Ca}{}{
+  \begin{itemize}
+   \item Took on larger role within Ellie Mae to provide technical vision and leadership for re-defining the Ellie Mae Infrastructure team which included Public Cloud, Private Cloud, DevOps, Service Reliability and Performance Engineering
+   \item Created the Cloud Platform Engineering team built around internal open-source and the development of core business services
+   \item Started Ellie Mae's open-source initiatives
+   \end{itemize}
+  }
+\cventry{May 2016--March 2016}{Staff Engineer, Public Cloud}{Ellie Mae}{Pleasanton, Ca}{}{
+  \begin{itemize}
+    \item Joined Ellie Mae as the principal technical member of the Public Cloud team tasked with helping Ellie Mae become a cloud-native company
+    \item Reviewed cloud architectures, gave guidance on implementation and technology choices
+    \item Evangelized what a modern infrastructure teams should be which is agile, not in the way and a global optimizer
+  \end{itemize}
+  }
+\cventry{November 2015--May 2016}{Staff Architect}{Concurrent}{Duluth, Ga}{}{
   \begin{itemize}
     \item Joined company as a CTO referral with the specific goal of helping him to transform the company into a modern agile company
     \item Worked closely with VP of Architecture to transform the role of an architect to better align with agile principles
@@ -102,12 +144,7 @@
       \item 	Enhanced department offerings by providing expertise on Air2Web platform applications and UNIX/Network technologies (SNMP and load balancing)
     \end{itemize}}
     
-     \cventry{May 2005--February 2007}{Senior System Administrator}{Air2Web}{Atlanta, Ga}{}{
-       \begin{itemize}
-         \item Implemented SNMP polling and trap notification by writing custom MIBs and Perl scripts as well as designing and writing a C++ application to generate statistics from proprietary log files for long-term trending via Cacti/RRDTool.
-         \item Created Requirements and Implementation documents for projects for use by Operations and Development
-         \item Designed and implemented a datacenter tracking application written in Perl that enabled the company for the first time to successfully catalog and audit all systems running in 4 different datacenters
-       \end{itemize}}
+     \cventry{2005--2007}{Senior System Administrator}{Air2Web}{Atlanta, Ga}{}{}
        
      \cventry{2003--2005}{Jack of All Trades (Linux/Network Administrator, DBA, \CC{} Developer)}{eMediaTrade}{Roswell, Ga}{}{}
      
