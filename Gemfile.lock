@@ -29,6 +29,7 @@ GEM
     tilt (1.4.1)
 
 PLATFORMS
+  java
   ruby
 
 DEPENDENCIES
@@ -37,3 +38,9 @@ DEPENDENCIES
   rack
   sinatra
   sinatra-contrib
+
+RUBY VERSION
+   ruby 2.3.3p0 (jruby 9.1.16.0)
+
+BUNDLED WITH
+   1.16.1
