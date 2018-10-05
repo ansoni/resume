@@ -1,10 +1,11 @@
 headers:
   Home: /
   Resume: /resume
-  Culture: /culture
-  Design: /design
   Cloud: /cloud
+  Culture: /culture
+  Leadership: /leadership
   Tech: /tech
+  Design: /design
   Fun: /fun
 resume: resume/ajohnson.pdf
 resume_tex: resume/ajohnson.tex
