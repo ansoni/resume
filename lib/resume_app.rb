@@ -18,6 +18,7 @@ class ResumeApp < Sinatra::Base
   set :port, 80
   set :sessions, true
   set :json_encoder, :to_json
+  set :haml, { escape_html: false }
 
   def initialize
     super
