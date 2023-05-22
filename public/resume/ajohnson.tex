@@ -32,16 +32,7 @@
 \makecvtitle
 
 \section{Goal}
-\cvitem{}{To ride eternal, shiny and chrome.}
-\section{Technical Competencies}
-  \cvitem{Cloud}{Amazon Web Services, OpenStack Swift, Selectel(Russia Cloud Provider) }
-  \cvitem{Languages}{Go, Java, Ruby, Python, Perl, Objective-C/Cocoa, Qt, C++, xHTML, Javascript, CSS, and Shell scripting}
-   \cvitem{Storage}{iSCSI, RAID 0,15,10, ZFS, CIFS, and NFS}
-   \cvitem{Virtualization}{Docker, Xen, VMWare, and VirtualBox}
-   \cvitem{Databases}{Elasticsearch, Postgres, MongoDB, Oracle RAC 10g/11g and Mysql}
-   \cvitem{Network}{F5 and Foundry Load Balancers, Cisco and Juniper Switches, and Cisco Routers}
-    \cvitem{Monitoring}{Fluentd, Logstash, SNMP (all aspects), collectd, Graphite, Cacti, OpenNMS and Nagios}
-        
+\cvitem{}{To ride eternal, shiny and chrome.}        
 
 \section{Personal Interests}
   \cvitem{Tech}{Business Orchestration, IoT/Raspberry Pi/Arduino and Quantum Physics}
@@ -101,29 +92,18 @@
      The AWS Hero's Journey to Achieving Autonomous, Self-Healing Security (SAC402)\\
      \myurl{https://youtu.be/RvIjgfUT-C0}
   }
-  
-    
-\section{Community Projects}
-
- \cvitem{\myhref{http://terraform.io}{Terraform Elastic Provider}}{
-        \myhref{https://github.com/ansoni/terraform-provider-elastic}{terraform-elastic-provider} allows you to deploy Kibana index-patterns, saved searches, visualizations and Dashboards as code.
-    }
-
-      \cvitem{\myhref{http://www.fluentd.org/plugins}{Fluentd Plugins}}{
-        \myhref{https://github.com/ansoni/fluent-plugin-json-schema-filter}{json-schema-filter} validates incoming events against a JSON schema
-        \myhref{https://github.com/ansoni/fluent-plugin-s3-input}{s3-input} takes coming events that have an S3 bucket/key location and will pull the data from S3 into the event.
-    }
-    \cvitem{\myhref{http://jmeter.apache.org}{JMeter}}{\myhref{http://jmeter.apache.org/usermanual/component_reference.html\#Test_Fragment}{Test Fragment} and \myhref{http://jmeter.apache.org/usermanual/component_reference.html\#setUp_Thread_Group}{Setup and Teardown Thread Group} Enhancements and Bug Reports}
-    \cvitem{\myhref{https://github.com/Netflix/ice}{NetFlix Ice}}{SAML Single-Sign On Login Support}
-    \cvitem{\myhref{https://github.com/ansoni/watir-extensions-element-screenshot}{Watir}}{Element Screenshot Support}
     
 \section{Experience}
-\cventry{June 2020 to Present}{Field CTO, Data}{SentinelOne (formerly Scalyr)}{San Mateo, Ca}{}{
+\cventry{June 2020 to Present}{Field CTO, Data}{DataSet (formerly Scalyr acquired by SentinelOne in 2021)}{San Mateo, Ca}{}{
   \begin{itemize}
-   \item Joined company as a principal practitioner of Observability bringing the company new perspectives, insights and opportunities.
-   \item Created highly opinionated product and company strategy pitches that are actively discussed and many integrated into product roadmaps.
-   \item Created a Scalyr Elasticsearch Connector component allowing frictionless migrations by allowing Scalyr to be queried as an Elasticsearch remote cluster
-   \item Implementing customer-driven features that "close the deal".
+   \item Joined company as the principal practitioner of Observability bringing the startup new perspectives, insights and opportunities. One of those perspectives was a key motivator for the \myhref{https://www.sentinelone.com/press/sentinelone-acquires-scalyr-to-revolutionize-xdr-and-security-analytics/}{\$155 million dollar acquisition of Scalyr by SentinelOne}.
+   \item Created highly opinionated product and company strategy narratives that have been triaged into the product roadmap.
+   \item Implemented customer-driven features to "close the deal".
+  \begin{itemize}
+  	\item Re-wrote SAML Authentication that was blocking a now 4 million ARR customer.
+	\item Added Multi-Cloud Ingest to the platform via \myhref{https://app.scalyr.com/solutions/import-google-pub-sub}{Google PubSub} and \myhref{https://app.scalyr.com/solutions/import-eventhub}{Azure EventHub} Monitor 
+	\item Added \myhref{https://app.scalyr.com/help/secrets}{Secrets Management} to the platform for securing customer API keys.
+  \end{itemize}
   \end{itemize}
   }
 \cventry{Mar 2017 to June 2020}{Principal Engineer, Cloud Platform and Engineering}{Ellie Mae}{Pleasanton, Ca}{}{
@@ -172,9 +152,23 @@
     
      \cventry{2005--2007}{Senior System Administrator}{Air2Web}{Atlanta, Ga}{}{}
        
-     \cventry{2003--2005}{Jack of All Trades (Linux/Network Administrator, DBA, \CC{} Developer)}{eMediaTrade}{Roswell, Ga}{}{}
+     \cventry{2003--2005}{Linux/Network Administrator, DBA, \CC{} Developer}{eMediaTrade}{Roswell, Ga}{}{}
      
       \cventry{1999--2003}{Operations Engineer}{Pathfire}{Roswell, Ga}{}{}
 
+\section{Community Projects}
+
+ \cvitem{\myhref{http://terraform.io}{Terraform Elastic Provider}}{
+        \myhref{https://github.com/ansoni/terraform-provider-elastic}{terraform-elastic-provider} allows you to deploy Kibana index-patterns, saved searches, visualizations and Dashboards as code.
+    }
+
+      \cvitem{\myhref{http://www.fluentd.org/plugins}{Fluentd Plugins}}{
+        \myhref{https://github.com/ansoni/fluent-plugin-json-schema-filter}{json-schema-filter} validates incoming events against a JSON schema
+        \myhref{https://github.com/ansoni/fluent-plugin-s3-input}{s3-input} takes coming events that have an S3 bucket/key location and will pull the data from S3 into the event.
+    }
+    \cvitem{\myhref{http://jmeter.apache.org}{JMeter}}{\myhref{http://jmeter.apache.org/usermanual/component_reference.html\#Test_Fragment}{Test Fragment} and \myhref{http://jmeter.apache.org/usermanual/component_reference.html\#setUp_Thread_Group}{Setup and Teardown Thread Group} Enhancements and Bug Reports}
+    \cvitem{\myhref{https://github.com/Netflix/ice}{NetFlix Ice}}{SAML Single-Sign On Login Support}
+    \cvitem{\myhref{https://github.com/ansoni/watir-extensions-element-screenshot}{Watir}}{Element Screenshot Support}
+          
 \end{document}
   
