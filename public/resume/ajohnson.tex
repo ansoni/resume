@@ -1,7 +1,7 @@
 \documentclass[11pt,a4paper,sans]{moderncv}
 
-\moderncvstyle{casual} 
 \moderncvcolor{orange}
+\moderncvstyle{casual} 
 \usepackage[utf8]{inputenc}
 \usepackage[margin=0.5in, bottom=0.75in]{geometry}
 \usepackage{paralist}
@@ -35,11 +35,22 @@
 \cvitem{}{To ride eternal, shiny and chrome.}        
 
 \section{Personal Interests}
-  \cvitem{Tech}{Business Orchestration, IoT/Raspberry Pi/Arduino and Quantum Physics}
-  \cvitem{Non-Tech}{Espresso, Fermentation, World Cultures, and Kyudo (Japanese Archery)}
+  \cvitem{Tech}{Business Process Automation, IoT/Raspberry Pi/Arduino and Quantum Physics}
+  \cvitem{Non-Tech}{Espresso, Fermentation, and Scouting}
 
 \section{Recent Notables}
-
+\cventry{January 2025}{SentinelOne Webinar}{Smarter Data Ingestion and Storage Strategies}{Presenter}{web} {
+  Presented on the importance of a solid data ingestion strategy with a focus on how dataloss and delays hurt your security posture. \\
+  \myurl{https://www.sentinelone.com/resources/smarter-data-ingestion-and-storage-strategies/}
+}
+\cventry{May 24th, 2024}{TechStrong.tv}{Understanding the Value of OCSF for Security Practitioners}{Presenter}{web} {
+    Re-wrote the RSA presentation for an internet audience sharing the importance of data schemas in relation to company security posture. \\
+    \myurl{https://techstrong.tv/videos/techstrong-con-2024/understanding-the-value-of-ocsf-for-security-practitioners-with-amy-pham-and-anthony-johnson-at-techstrong-con-2024}
+ }
+ \cventry{May 7th, 2024}{RSA Conference}{Understanding the Value of OCSF for Security Practitioners}{Presenter}{San Francisco, Ca} {
+    Thought-leading presentation showing why adoption of the Open Cybersecurity Schema Framework across the industry is a game changer for the cybersecurity industry. \\
+    \myurl{https://techstrong.tv/videos/techstrong-con-2024/understanding-the-value-of-ocsf-for-security-practitioners-with-amy-pham-and-anthony-johnson-at-techstrong-con-2024}
+ }
  \cventry{March 4th, 2020}{Elastic\{on\} Roadshow}{Redefining the Mortgage Industry with Search}{Presenter}{San Francisco, Ca}{
     Spoke directly about culture change, data migration, user adoption and education while migrating to Elasticsearch/Kibana at Ellie Mae.
   } 
@@ -49,7 +60,7 @@
  \cventry{February 19th, 2019}{Ellie Mae "BFH" hack-a-thon}{Organizer/MC}{Pleasanton, Ca}{}{
     Worked with internal comms, marketing, and engineering leaders to organize and execute Ellie Mae's 2019 hack-a-thon.  We had over 40 teams and 200 engineers participate.
   } 
-\cventry{February 9th, 2019}{MineFaire}{}{Visualizing Social Media in Minecraft}{San Mateo, CA}{
+\cventry{February 9th, 2019}{MineFaire}{}{Visualizing Social Media in Minecraft}{San Mateo, Ca}{
   Educational presentation targeted for ages 7-14 years old. Showed how someone could utilizing Java and other Minecraft development kits to visualize data from Twitter within Minecraft. Demo was a programmatically generated village that represented people you were following. \\
 }
  \cventry{November 27th, 2018}{AWS re:Invent 2018 non-profit hack-a-thon}{Winner}{Las Vegas, Nv}{}{
@@ -94,7 +105,15 @@
   }
     
 \section{Experience}
-\cventry{June 2020 to Present}{Field CTO, Data}{DataSet (formerly Scalyr acquired by SentinelOne in 2021)}{San Mateo, Ca}{}{
+\cventry{December 2024 to March 2025}{Engineer}{}{Mountain View, Ca}{}{
+  \begin{itemize}
+   \item Took ownership of \myhref{https://app.scalyr.com/help/power-queries}{PowerQuery language} roadmap working with customers and internal stakeholders.
+   \item Resolved high visibility bugs around query parsing, planning and execution. 
+   \item Planned, Designed and Implemented new query functions including Geo Functions and Network Functions. 
+  \end{itemize}
+  }
+
+\cventry{June 2020 to December 2024}{Field CTO, Data}{SentinelOne (formerly Scalyr acquired by SentinelOne in 2021)}{Mountain View, Ca}{}{
   \begin{itemize}
    \item Joined company as the principal practitioner of Observability bringing the startup new perspectives, insights and opportunities. One of those perspectives was a key motivator for the \myhref{https://www.sentinelone.com/press/sentinelone-acquires-scalyr-to-revolutionize-xdr-and-security-analytics/}{\$155 million dollar acquisition of Scalyr by SentinelOne}.
    \item Created highly opinionated product and company strategy narratives that have been triaged into the product roadmap.
@@ -116,14 +135,14 @@
   }
 \cventry{May 2016 to Mar 2017}{Staff Engineer, Public Cloud}{Ellie Mae}{Pleasanton, Ca}{}{
   \begin{itemize}
-    \item Joined Ellie Mae as the principal technical member of the Public Cloud team tasked with helping Ellie Mae become a cloud-native company
+    \item Joined Ellie Mae as the principal technical member of the Public Cloud team tasked with helping Ellie Mae become a \\myhref{https://www.fintechfutures.com/2018/11/aws-goes-all-the-way-with-ellie-mae/}{cloud-native company}
     \item Reviewed cloud architectures, gave guidance on implementation and technology choices
-    \item Evangelized what a modern infrastructure teams should be which is agile, not in the way and a global optimizer
+    \item Evangelized "you Build It, You Run It" approach to product engineering.
   \end{itemize}
   }
-\cventry{Nov 2015 to May 2016}{Staff Architect}{Concurrent}{Duluth, Ga}{}{
+ \cventry{Nov 2015 to May 2016}{Staff Architect}{Concurrent}{Duluth, Ga}{}{
   \begin{itemize}
-    \item Joined company as a CTO referral with the specific goal of helping him to transform the company into a modern agile company
+    \item Joined company as a CTO referral with the specific goal of helping transform the company into a modern agile company
     \item Worked closely with VP of Architecture to transform the role of an architect to better align with agile principles
     \item Consulted with VP of Development to provide insights and guidance into agile best practices to improve development team outputs
     \item Engaged with the VP of Product and evangelized the usage of product narratives as inputs to development teams
@@ -133,28 +152,17 @@
 
 \cventry{Jan 2013 to Nov 2015}{Senior Cloud Architect}{HERE a subsidiary of Nokia}{Alpharetta, Ga}{}{
   \begin{itemize}
-    \item Helped to re-build and re-imagine the Cloud Platform team as a micro-service organization
     \item Reviewed HERE product architectures to ensure teams utilized AWS properly and efficiently
-    \item Extended NetFlix Ice to add SSO Authentication via SAML with the ability to constrain billing data to Active Directory Security Group memberships
-    \item Built and maintained the Nokia Linux Amazon Machine Image(AMI) that every team utilized in AWS
+    \item Built and maintained the Nokia Linux Amazon Machine Image(AMI) that every team utilized in AWS. Scoped and Re-designed the AMI to save the company 250,000 dollars a year.
     \item Implemented AWS Federated Login to support 1,000 unique users across 200 accounts using Active Directory Security Group memberships for account access
-    \item Identified, scoped and re-designed the Nokia Linux AMI to save the company 250,000 dollars a year
-    \item Brainstormed, Designed, Implemented and launched the Cloud Platform api and web portal using JAX-RS, Single Sign-on and Angular JS.  This self-service portal allowed teams to run tooling, reporting and automation against AWS accounts
+    \item Brainstormed, Designed, Implemented and launched the Cloud Platform api and web portal using JAX-RS, Single Sign-on and Angular JS.  This self-service portal allowed teams to run tooling, reporting and automation against AWS accounts.
   \end{itemize}
 }
 
-
-\cventry{2012--2013}{Full Stack Engineer, Global Networks}{Nokia}{Alpharetta, Ga}{}{}
-\cventry{2008--2012}{Senior Research Engineer}{Nokia}{Alpharetta, Ga}{}{}
-
-  
-  \cventry{2007--2008}{Software Engineer}{Air2Web}{Atlanta, Ga}{}{}
-    
-     \cventry{2005--2007}{Senior System Administrator}{Air2Web}{Atlanta, Ga}{}{}
-       
-     \cventry{2003--2005}{Linux/Network Administrator, DBA, \CC{} Developer}{eMediaTrade}{Roswell, Ga}{}{}
-     
-      \cventry{1999--2003}{Operations Engineer}{Pathfire}{Roswell, Ga}{}{}
+     \cventry{2008--2013}{Senior Software Developer and Full Stack Engineer for Global Networks}{Nokia}{Alpharetta, Ga}{}{}
+     \cventry{2005--2008}{Senior System Administrator and Software Engineer}{Air2Web}{Atlanta, Ga}{}{}
+     \cventry{2003--2005}{Linux/Network Administrator, DBA, \CC{} Developer}{eMediaTrade}{Roswell, Ga}{}{}  
+     \cventry{1999--2003}{Operations Engineer}{Pathfire}{Roswell, Ga}{}{}
 
 \section{Community Projects}
 
@@ -167,7 +175,6 @@
         \myhref{https://github.com/ansoni/fluent-plugin-s3-input}{s3-input} takes coming events that have an S3 bucket/key location and will pull the data from S3 into the event.
     }
     \cvitem{\myhref{http://jmeter.apache.org}{JMeter}}{\myhref{http://jmeter.apache.org/usermanual/component_reference.html\#Test_Fragment}{Test Fragment} and \myhref{http://jmeter.apache.org/usermanual/component_reference.html\#setUp_Thread_Group}{Setup and Teardown Thread Group} Enhancements and Bug Reports}
-    \cvitem{\myhref{https://github.com/Netflix/ice}{NetFlix Ice}}{SAML Single-Sign On Login Support}
     \cvitem{\myhref{https://github.com/ansoni/watir-extensions-element-screenshot}{Watir}}{Element Screenshot Support}
           
 \end{document}
